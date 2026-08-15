@@ -1,7 +1,7 @@
 const team = [
-  { name: "Nally", role: "Cake Designer", image: "/images/IMG_4068.JPG" },
-  { name: "Celliy", role: "Head Baker", image: "/images/IMG_4070.JPG" },
-  { name: "Lilly", role: "Decor Specialist", image: "/images/IMG_4069.JPG" },
+  { name: "Nally", role: "Cake Designer", image: `${import.meta.env.BASE_URL}images/IMG_4068.JPG` },
+  { name: "Celliy", role: "Head Baker", image: `${import.meta.env.BASE_URL}images/IMG_4070.JPG` },
+  { name: "Lilly", role: "Decor Specialist", image: `${import.meta.env.BASE_URL}images/IMG_4069.JPG` },
 ];
 
 const values = [
@@ -22,7 +22,7 @@ export default function About() {
       </section>
 
       <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
-        <img src="/images/MacaronC2.jpg" className="rounded-2xl shadow-lg w-full" alt="Cakes and macarons at DelightCake" />
+        <img src={`${import.meta.env.BASE_URL}images/MacaronC2.jpg`} className="rounded-2xl shadow-lg w-full" alt="Cakes and macarons at DelightCake" />
         <div>
           <h3 className="font-display text-3xl font-bold mb-4 text-rose-600">Our Story</h3>
           <p className="text-ink-soft leading-relaxed">

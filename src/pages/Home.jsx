@@ -7,7 +7,7 @@ export default function Home() {
       {/* Hero */}
       <section
         className="relative h-140 md:h-130 w-full bg-cover bg-center flex items-center justify-center text-white"
-        style={{ backgroundImage: "url('/images/bghero1.jpg')" }}
+        style={{ backgroundImage: `url('${import.meta.env.BASE_URL}images/bghero1.jpg')` }}
       >
         <div className="absolute inset-0 bg-linear-to-b from-black/50 via-black/40 to-black/60" />
         <div className="relative text-center px-6 max-w-2xl">
@@ -65,7 +65,7 @@ export default function Home() {
       <section className="max-w-6xl mx-auto px-4 pb-16">
         <div
           className="relative h-72 md:h-96 rounded-2xl overflow-hidden bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/IMG_3979.jpg')" }}
+          style={{ backgroundImage: `url('${import.meta.env.BASE_URL}images/IMG_3979.jpg')` }}
         >
           <div className="absolute inset-0 bg-black/50" />
           <div className="relative z-10 h-full flex items-center justify-center text-center px-6">

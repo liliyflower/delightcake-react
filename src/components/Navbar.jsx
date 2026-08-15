@@ -23,7 +23,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between py-2.5">
           <NavLink to="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
             <img
-              src="/images/logorm.jpg"
+              src={`${import.meta.env.BASE_URL}images/logorm.jpg`}
               alt="DelightCake logo"
               className="w-10 h-10 rounded-full object-cover shrink-0 ring-2 ring-rose-300/60"
             />
