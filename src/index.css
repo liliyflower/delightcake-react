@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-body: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-script: "Dancing Script", cursive;
+
+  --color-cream: #fff8f4;
+  --color-blush: #fdeaee;
+  --color-rose-50: #fff1f4;
+  --color-rose-100: #ffe1e8;
+  --color-rose-300: #f6a8bc;
+  --color-rose-500: #e1527a;
+  --color-rose-600: #c93d66;
+  --color-berry-700: #7a2142;
+  --color-berry-900: #4a1027;
+  --color-gold-400: #e3b559;
+  --color-gold-500: #d9a441;
+  --color-ink: #3a2c2e;
+  --color-ink-soft: #6b5457;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+.scallop-divider {
+  height: 22px;
+  width: 100%;
+  background-image: radial-gradient(circle at 10px 0, transparent 10px, var(--scallop-color, var(--color-cream)) 10.5px);
+  background-size: 20px 20px;
+  background-repeat: repeat-x;
+  background-position: top center;
+}
+
+.scallop-divider-up {
+  height: 22px;
+  width: 100%;
+  background-image: radial-gradient(circle at 10px 22px, transparent 10px, var(--scallop-color, var(--color-cream)) 10.5px);
+  background-size: 20px 22px;
+  background-repeat: repeat-x;
+  background-position: bottom center;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Focus visibility for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-rose-500);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
