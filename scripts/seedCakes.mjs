@@ -1,13 +1,3 @@
-// One-off script to push the local cake catalog into Firestore.
-//
-// Usage:
-//   1. Fill in .env.local with your Firebase config (see .env.example).
-//   2. node scripts/seedCakes.mjs
-//
-// This is optional — the site works fine reading from src/data/cakes.js if
-// you never run this. Use it once you're ready to manage cakes from the
-// Firebase console / your own admin tool instead of editing source code.
-
 import { config } from "dotenv";
 import { initializeApp } from "firebase/app";
 import { getFirestore, doc, setDoc } from "firebase/firestore";
